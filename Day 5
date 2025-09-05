@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float principal, rate, time, simpleInterest, compoundInterest;
+
+    printf("enter the value of principal , rate , time : ");
+    scanf("%f %f %f", &principal, &rate, &time);
+
+    
+    simpleInterest = (principal * rate * time) / 100;
+
+    
+    compoundInterest = principal * pow((1 + rate / 100), time) - principal;
+
+    
+    printf("Simple Interest=%.2f, Compound Interest=%.2f", simpleInterest, compoundInterest);
+
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+    int totalSeconds, hours, minutes, seconds;
+
+    printf("enter totalSeconds : ");
+    scanf("%d", &totalSeconds);
+
+    
+    hours = totalSeconds / 3600;
+    minutes = (totalSeconds % 3600) / 60;
+    seconds = totalSeconds % 60;
+
+    
+    printf("%d:%d:%d", hours, minutes, seconds);
+
+    return 0;
+}
