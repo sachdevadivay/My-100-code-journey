@@ -1,4 +1,4 @@
-#include <stdio.h>
+6#include <stdio.h>
 
 int main() {
     int length, breadth, area, perimeter;
@@ -12,24 +12,6 @@ int main() {
 
     
     printf("Area=%d, Perimeter=%d", area, perimeter);
-
-    return 0;
-}
- #include <stdio.h>
-#define PI 3.1416
-
-int main() {
-    float radius, area, circumference;
-
-    printf("enter the value of radius : ");
-    scanf("%f", &radius);
-
-    
-    area = PI * radius * radius;
-    circumference = 2 * PI * radius;
-
-    
-    printf("Area=%.2f, Circumference=%.2f", area, circumference);
 
     return 0;
 }
