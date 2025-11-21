@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    long long n;
+    scanf("%lld", &n);
+
+    int freq[10] = {0};  
+    int digit;
+
+    
+    while(n > 0) {
+        digit = n % 10;
+        freq[digit]++;
+        n /= 10;
+    }
+
+    
+    int maxDigit = 0, maxCount = freq[0];
+    for(int i = 1; i < 10; i++) {
+        if(freq[i] > maxCount) {
+            maxCount = freq[i];
+            maxDigit = i;
+        }
+    }
+
+    printf("%d", maxDigit);
+
+    return 0;
+}
