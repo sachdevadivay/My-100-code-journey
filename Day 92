@@ -6,7 +6,7 @@ struct Student {
     int marks;
 };
 int main() {
-    struct Student s[5];   // Array of 5 students
+    struct Student s[5];   
     int i;
     
     for(i = 0; i < 5; i++) {
