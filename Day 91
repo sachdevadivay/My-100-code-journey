@@ -7,14 +7,14 @@ struct Student {
 };
 int main() {
     struct Student s;
-    // Reading student details
+  
     printf("Name: ");
     scanf("%s", s.name);
     printf("Roll: ");
     scanf("%d", &s.roll_no);
     printf("Marks: ");
     scanf("%d", &s.marks);
-    // Printing student details
+    
     printf("Name: %s | Roll: %d | Marks: %d\n", s.name, s.roll_no, s.marks);
     return 0;
 }
